@@ -1,0 +1,59 @@
+:host {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  height: 190px;
+  width: 615px;
+  margin: auto;
+}
+
+.option {
+  max-width: 470px;
+  border-radius: 10px;
+  border: solid 2px #4a5141;
+  color: #4a5141;
+  font-size: 24px;
+  font-family: 'NotoSansCJKtc';
+  height: 66px;
+  z-index: 20;
+  display: flex;
+  align-items: center;
+  padding: 0 15px;
+  margin: 7px;
+  word-wrap: break-word;
+  cursor: pointer;
+  box-sizing: border-box;
+
+  &.large {
+    width: 470px;
+  }
+
+  &.small {
+    width: 300px;
+  }
+
+  &.selected {
+    background: #d8e321;
+    border: solid 2px #d8e321;
+
+    &:before {
+      content: '';
+      width: 28px;
+      height: 28px;
+      background: url('/assets/images/icon_check.svg');
+      background-repeat: no-repeat;
+      background-size: 100%;
+      margin-right: 10px;
+    }
+  }
+
+  &.unselected {
+    opacity: 0.5;
+  }
+
+  &.font-small {
+    font-size: 20px;
+  }
+}

@@ -1,0 +1,51 @@
+:host {
+  display: block;
+  position: relative;
+  margin-bottom: 50px;
+  text-align: center;
+  font-size: 36px;
+  max-width: 612px;
+  font-family: 'NotoSansCJKtc';
+
+  img {
+    max-width: 100vw;
+    width: 579px;
+  }
+
+  .index {
+    position: relative;
+    z-index: 10;
+  }
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    height: 100%;
+    width: 100%;
+    background: url('/assets/images/des_bg.svg');
+    background-size: 100% 100%;
+    z-index: 5;
+  }
+}
+
+// moble
+@media (max-width: 575.98px) {
+  :host {
+    margin-bottom: 25px;
+
+  }
+
+  img {
+    width: 100%;
+  }
+}
+
+// large pc
+@media (min-width: 1919px) {
+  img {
+    width: 720px;
+  }
+}

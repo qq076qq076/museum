@@ -1,27 +1,11 @@
 :host {
-  position: relative;
   display: flex;
-  align-items: center;
-  justify-content: center;
   flex-direction: column;
-  width: 100vw;
-  height: 100vh;
-  background-image: url('/assets/images/bg1.svg'),
-    url('/assets/images/bg2.svg');
-  background-size: 100% 100%;
-  background-position: center center;
-  background-repeat: no-repeat;
-  overflow: hidden;
-
-  .place {
-    margin-bottom: 9px;
-    width: 400px;
-  }
-
-  .title2 {
-    margin-bottom: 54px;
-    width: 400px;
-  }
+  align-items: flex-start;
+  width: 850px;
+  max-width: 100vw;
+  margin: auto;
+  padding-top: 178px;
 
   &::before {
     content: '';
@@ -30,12 +14,14 @@
     position: absolute;
     display: block;
     top: 0;
+    left: 0;
     background: url('/assets/images/home-header.png');
     background-size: 100%;
     background-repeat: no-repeat;
     background-position: top center;
-    z-index: 1;
-    min-width: 800px;
+    z-index: -2;
+    // min-width: 800px;
+    pointer-events: none;
   }
 
   &::after {
@@ -45,232 +31,136 @@
     position: absolute;
     display: block;
     bottom: 0;
+    left: 0;
     background: url('/assets/images/home-footer.png');
     background-size: 100% auto;
     background-repeat: no-repeat;
     background-position: bottom;
     background-position: bottom center;
-    z-index: 1;
-    min-width: 800px;
+    z-index: -2;
+    // min-width: 800px;
+    pointer-events: none;
   }
+}
 
-  .title {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    width: 850px;
-    max-width: 100vw;
-  }
+.place {
+  margin-bottom: 9px;
+  width: 400px;
+}
 
-  .describe {
-    position: relative;
-    margin-bottom: 50px;
+.title2 {
+  margin-bottom: 54px;
+  width: 400px;
+}
 
-    img {
-      max-width: 100vw;
-      width: 579px;
-    }
+.cast {
+  width: 215px;
+  height: 87px;
+}
+
+.start-area {
+  position: relative;
+  width: 100%;
+
+  app-button {
+    position: absolute;
+    right: 0;
 
     &::before {
       content: '';
-      position: absolute;
-      top: 0;
-      left: 0;
       display: block;
-      height: 200%;
-      width: 100%;
-      background: url('/assets/images/des_bg.svg');
-      background-size: 100% 100%;
+      background: url('/assets/images/btn_bg.svg');
+      background-size: 100%;
+      background-repeat: no-repeat;
+      width: 124px;
+      height: 124px;
+      position: absolute;
+      right: -20%;
       z-index: -1;
+      pointer-events: none;
     }
   }
+}
 
+// moble
+@media (max-width: 575.98px) {
+  :host {
+    width: calc(100vw - 10px);
+    padding-top: 130px;
+  }
 
-  .cast {
-    width: 215px;
-    height: 87px;
+  .place {
+    width: 100%;
+  }
+
+  .title2 {
+    width: 310px;
+    margin-bottom: 27px;
   }
 
   .start-area {
-    position: relative;
-    width: 100%;
+    width: 90%;
 
-    .start-btn {
-      position: absolute;
-      right: 0;
-      width: 237px;
-      height: 70px;
-      border-radius: 20px;
-      border: none;
-      background-color: #d8e321;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      cursor: pointer;
+    app-button {
 
       &::before {
-        content: '';
-        display: block;
-        background: url('/assets/images/btn_bg.svg');
-        background-size: 100%;
-        background-repeat: no-repeat;
-        width: 124px;
-        height: 124px;
-        position: absolute;
-        right: -20%;
-        z-index: -1;
-      }
-
-      &::after {
-        content: '';
-        display: block;
-        width: calc(100% + 12px);
-        height: calc(100% + 12px);
-        background-color: rgba(216, 227, 33, 0.33);
-        position: absolute;
-        border-radius: 20px;
-        top: -6px;
-        left: -6px;
-        z-index: -1;
+        width: 96px;
+        height: 96px;
       }
     }
   }
 
+  .cast {
+    width: 189px;
+    margin-bottom: 98px;
+  }
+}
 
-  .institution {
-    display: inline-block;
-    align-self: flex-start;
-    position: absolute;
-    bottom: 13px;
-    left: 19px;
-    z-index: 10;
-
-    .copyright {
-      margin-left: 64px;
-    }
+// tablet
+@media (min-width: 576px) and (max-width: 769px) {
+  :host {
+    width: calc(100vw - 156px);
   }
 
-  // moble
-  @media (max-width: 575.98px) {
-    .title {
-      width: calc(100vw - 10px);
-    }
-
-    .place {
-      width: 100%;
-    }
-
-    .title2 {
-      width: 310px;
-    }
-
-    .describe img {
-      width: 100%;
-    }
-
-    .start-area {
-      width: 90%;
-
-      .start-btn {
-        width: 142px;
-        height: 42px;
-
-        img {
-          width: 88px;
-          height: 23px;
-        }
-
-        &::before {
-          width: 96px;
-          height: 96px;
-        }
-      }
-    }
-
-    .institution {
-      left: 10px;
-      bottom: 7px;
-      font-size: 10px;
-
-      img {
-        width: 210px;
-      }
-
-      .copyright {
-        margin-left: 42px;
-      }
-    }
-
-    .cast {
-      width: 189px;
-      margin-bottom: 98px;
-    }
+  .title2 {
+    margin-bottom: 44px;
   }
 
-  // tablet
-  @media (min-width: 576px) and (max-width: 769px) {
-    .title {
-      width: calc(100vw - 156px);
-    }
+  .cast {
+    margin-bottom: 222px;
+  }
+}
 
-    .title2 {
-      margin-bottom: 44px;
-    }
-
-    .cast {
-      margin-bottom: 222px;
-    }
+// large pc
+@media (min-width: 1919px) {
+  .cast {
+    width: 272px;
+    height: 110px;
   }
 
-  // large pc
-  @media (min-width: 1919px) {
-    .cast {
-      width: 272px;
-      height: 110px;
-    }
+  .place {
+    margin-bottom: 9px;
+    width: 500px;
+  }
 
-    .place {
-      margin-bottom: 9px;
-      width: 500px;
-    }
+  .title2 {
+    margin-bottom: 66px;
+    width: 500px;
+  }
 
-    .title2 {
-      margin-bottom: 66px;
-      width: 500px;
-    }
+  :host {
+    width: 1057px;
+    padding-top: 264px;
+  }
 
-    .describe img {
-      width: 720px;
-    }
+  .start-area {
+    width: 80%;
 
-    .title {
-      width: 1057px;
-    }
+    app-button {
 
-    .start-area {
-      width: 80%;
-
-      .start-btn {
-        width: 298px;
-        height: 88px;
-
-        &::before {
-          width: 180px;
-          height: 180px;
-        }
-      }
-    }
-
-    .institution {
-      left: 41px;
-      bottom: 22px;
-
-      img {
-        width: 319px;
-      }
-
-      .copyright {
-        margin-left: 64px;
+      &::before {
+        width: 180px;
+        height: 180px;
       }
     }
   }

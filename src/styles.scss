@@ -2,8 +2,13 @@ html,
 body {
   margin: 0;
   padding: 0;
-  width: 100vw;
-  height: 100vh;
+  // width: 100vw;
+  // height: 100vh;
+}
+
+@font-face {
+  font-family: 'NotoSansCJKtc';
+  src: url('/assets/font/NotoSansCJKtc-Regular.otf') format("truetype");
 }
 
 p,

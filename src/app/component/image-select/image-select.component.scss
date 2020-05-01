@@ -1,0 +1,26 @@
+:host {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.option {
+  cursor: pointer;
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: auto 100%;
+  width: 200px;
+  height: 200px;
+  border-radius: 20px;
+  border: solid 5px transparent;
+  margin: 15px;
+  z-index: 20;
+
+  &.selected {
+    border: solid 5px #d8e321;
+  }
+
+  &.unselected{
+    opacity: 0.5;
+  }
+}

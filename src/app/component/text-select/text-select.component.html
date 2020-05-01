@@ -1,0 +1,12 @@
+<div *ngFor="let item of optionList"
+     class="option"
+     [ngClass]="{
+       selected:item === selected,
+       unselected:selected && item !== selected,
+       large:optionList.length === 2,
+       small:optionList.length === 4,
+       'font-small':font === 'small'
+      }"
+     (click)="changeSelect.emit(item)">
+  {{item.text}}
+</div>

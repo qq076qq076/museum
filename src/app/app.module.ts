@@ -1,18 +1,28 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
-import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
+import { ButtonComponent } from './component/button/button.component';
+import { CardComponent } from './component/card/card.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { TitleUnderlineComponent } from './component/title-underline/title-underline.component';
+import { ImageSelectComponent } from './component/image-select/image-select.component';
+import { TextSelectComponent } from './component/text-select/text-select.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    HomeComponent
+    HomeComponent,
+    ButtonComponent,
+    CardComponent,
+    TitleUnderlineComponent,
+    ImageSelectComponent,
+    TextSelectComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    BrowserAnimationsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

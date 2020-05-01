@@ -1,0 +1,28 @@
+<div [style.background-image]="'url('+optionPath+question.background+')'"
+     class="background-image"
+     *ngIf="showState==='show'"
+     @fadeInOutAnimation>
+</div>
+<div class="card"
+     [@cardAnimation]="showState">
+  <div *ngIf="showState==='show'"
+       class="card-container"
+       @fadeInOutAnimation>
+    <app-title-underline>
+      <p>{{question.topic}}</p>
+    </app-title-underline>
+    <app-image-select *ngIf="question.type === 'image'"
+                      [optionList]="question.optionList"
+                      [selected]="question.value"
+                      (changeSelect)="select($event)"></app-image-select>
+    <app-text-select *ngIf="question.type === 'text'"
+                     [optionList]="question.optionList"
+                     [selected]="question.value"
+                     [font]="question.font"
+                     (changeSelect)="select($event)"></app-text-select>
+    <app-button [attr.disabled]="!question.value"
+                (click)="nextStep()">
+      <img src="/assets/images/btn_next.svg" />
+    </app-button>
+  </div>
+</div>

@@ -1,21 +1,14 @@
-<div class="title">
-  <img class="place"
-       src="/assets/images/Pingtung.svg">
-  <img class="title2"
-       src="/assets/images/home-title2.svg" />
-  <div class="describe">
-    <img src="/assets/images/home-des.svg">
-  </div>
-  <img class="cast"
-       src="/assets/images/cast.svg">
-  <div class="start-area">
-    <button class="start-btn"
-            (click)="start()">
-      <img src="/assets/images/btn.png" />
-    </button>
-  </div>
-</div>
-<div class="institution">
-  <img src="/assets/images/institution.svg" />
-  <p class="copyright">本網站為屏東縣政府文化處版權所有 免責及隱私權宣告</p>
+<img class="place"
+     src="/assets/images/Pingtung.svg">
+<img class="title2"
+     src="/assets/images/home-title2.svg" />
+<app-title-underline>
+  <img src="/assets/images/home-des.svg">
+</app-title-underline>
+<img class="cast"
+     src="/assets/images/cast.svg">
+<div class="start-area">
+  <app-button (click)="next.emit()">
+    <img src="/assets/images/btn.png" />
+  </app-button>
 </div>

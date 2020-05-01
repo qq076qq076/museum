@@ -1,0 +1,49 @@
+:host {
+  width: 237px;
+  height: 70px;
+  border-radius: 20px;
+  border: none;
+  background-color: #d8e321;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  position: relative;
+  border: solid 6px rgba(216, 227, 33, 0.33);
+  background-clip: padding-box;
+  z-index: 20;
+
+  &[disabled=true] {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+}
+
+// moble
+@media (max-width: 575.98px) {
+  :host {
+    width: 142px;
+    height: 42px;
+    border-radius: 12px;
+
+    &::after {
+      border-radius: 12px;
+      width: calc(100% + 7px);
+      height: calc(100% + 7px);
+      top: -3.5px;
+      left: -3.5px;
+    }
+
+    img {
+      width: 88px;
+      height: 23px;
+    }
+  }
+}
+
+@media (min-width: 1919px) {
+  :host {
+    width: 298px;
+    height: 88px;
+  }
+}

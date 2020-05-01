@@ -1,0 +1,9 @@
+<div *ngFor="let item of optionList"
+     class="option"
+     [ngClass]="{
+       selected:item === selected,
+       unselected:selected && item !== selected
+      }"
+     [style.background-image]="'url('+optionPath+item.src+')'"
+     (click)="changeSelect.emit(item)">
+</div>

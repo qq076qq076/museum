@@ -1,1 +1,23 @@
-<router-outlet></router-outlet>
+<app-home *ngIf="step===0"
+          [@fadeInOutAnimation]="step===0"
+          (next)="start()"></app-home>
+<ng-container *ngIf="step!==0">
+  <app-card *ngIf="step===1"
+            [question]="firstQuestion"
+            [showState]="getShowState(1)"
+            (next)="next(firstQuestion,$event)"></app-card>
+  <app-card *ngIf="step<=2"
+            [question]="secondQuestion"
+            [showState]="getShowState(2)"
+            (next)="next(secondQuestion,$event)"></app-card>
+  <ng-container *ngFor="let question of questionList;let i = index;">
+    <app-card *ngIf="step>=i+1 && i+3>=step "
+              [question]="question"
+              [showState]="getShowState(i+3)"
+              (next)="next(question,$event)"></app-card>
+  </ng-container>
+</ng-container>
+<div class="institution">
+  <img src="/assets/images/institution.svg" />
+  <p class="copyright">本網站為屏東縣政府文化處版權所有 免責及隱私權宣告</p>
+</div>
