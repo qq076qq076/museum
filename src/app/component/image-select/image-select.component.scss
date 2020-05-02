@@ -2,6 +2,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
+  z-index: 20;
 }
 
 .option {
@@ -20,7 +22,36 @@
     border: solid 5px #d8e321;
   }
 
-  &.unselected{
+  &.unselected {
     opacity: 0.5;
   }
+}
+
+@media (max-width: 575.98px) {
+  :host {
+    // flex-direction: column;
+    display: block;
+  }
+
+  .option {
+    border-radius: 5px;
+    height: 88px;
+    margin: 15px 45px;
+    // margin-left: 45px;
+    // margin-right: 45px;
+    width: auto;
+    background-size: 100% auto;
+  }
+
+  // .height4 {
+  //   height: 25%;
+  // }
+
+  // .height3 {
+  //   height: calc(100% / 3);
+  // }
+
+  // .height2 {
+  //   height: 50%;
+  // }
 }

@@ -47,6 +47,7 @@ app-text-select {
   top: 0;
   left: 0;
   z-index: -5;
+  opacity: 0;
 }
 
 app-button {
@@ -54,3 +55,27 @@ app-button {
   margin-top: 55px;
   margin-bottom: 34px;
 }
+
+@media (max-width: 575.98px) {
+  .card {
+    margin-top: 42px;
+    margin-left: 15px;
+    margin-right: 15px;
+    width: auto;
+
+    app-title-underline {
+      margin-left: 10px;
+      margin-right: 10px;
+    }
+  }
+
+
+  app-button {
+    margin-top: 0;
+  }
+}
+
+// @media (max-width: 767.98px) {}
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) and (max-width: 767.98px) {}

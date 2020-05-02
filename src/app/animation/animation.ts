@@ -60,3 +60,46 @@ export const cardAnimation =
     //   style({ opacity: 0, offset: 0 }),
     // ]),
   ]);
+
+export const cardBackgroundAnimation =
+  trigger('cardBackgroundAnimation', [
+    state('thirdWait', style({
+      opacity: 0,
+      'z-index': -7,
+      'pointer-events': 'none',
+    })),
+    state('secondWait', style({
+      opacity: 0,
+      'z-index': -6,
+      'pointer-events': 'none',
+    })),
+    state('show', style({
+      opacity: 1,
+      'z-index': -5,
+      'pointer-events': 'none',
+    })),
+    transition('*=>*', [
+      animate('0.5s'),
+    ]),
+    // transition(':enter', [
+    //   style({
+    //     opacity: 0,
+    //     'z-index': -7,
+    //     'pointer-events': 'none',
+    //   }),
+    // ])
+    // transition(':enter', [
+    //   style({
+    //     opacity: 1,
+    //     transform: 'scale(0.85) translateY(-100px)',
+    //     'z-index': 9,
+    //     'pointer-events': 'none',
+    //   }),
+    //   style({
+    //     opacity: 0,
+    //     transform: 'scale(0.85) translateY(-100px)',
+    //     'z-index': 9,
+    //     'pointer-events': 'none',
+    //   }),
+    // ]),
+  ]);

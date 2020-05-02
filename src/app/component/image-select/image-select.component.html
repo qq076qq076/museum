@@ -2,7 +2,10 @@
      class="option"
      [ngClass]="{
        selected:item === selected,
-       unselected:selected && item !== selected
+       unselected:selected && item !== selected,
+       height4:optionList.length ===4,
+       height3:optionList.length ===3,
+       height2:optionList.length ===2
       }"
      [style.background-image]="'url('+optionPath+item.src+')'"
      (click)="changeSelect.emit(item)">
