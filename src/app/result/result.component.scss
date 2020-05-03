@@ -1,0 +1,223 @@
+:host {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  max-width: 100vw;
+  margin: auto;
+  color: #4a5141;
+
+  &::after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: block;
+    bottom: 0;
+    left: 0;
+    background: url('/assets/images/home-footer.png');
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-position: bottom center;
+    z-index: -2;
+    // min-width: 800px;
+    pointer-events: none;
+  }
+}
+
+.title {
+  position: absolute;
+  left: 20px;
+  top: 15px;
+
+  .place {
+    width: 300px;
+    display: inherit;
+  }
+
+  .title2 {
+    width: 392px;
+    display: inherit;
+  }
+}
+
+.gray {
+  color: rgba(74, 81, 65, .75);
+  font-size: 18px;
+  margin: 2px 0;
+  position: relative;
+}
+
+.content {
+  margin-top: 40px;
+  margin-left: 274px;
+  margin-right: 245px;
+  width: calc(100vw - 274px - 245px);
+}
+
+.head {
+  text-align: center;
+
+  img {
+    width: 320px;
+    height: 320px;
+    margin-right: 32px;
+  }
+}
+
+.describe {
+  display: flex;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+}
+
+app-title-underline {
+  font-size: 36px;
+  margin-bottom: 0;
+  width: max-content;
+  font-weight: 500;
+}
+
+.border {
+  border-radius: 10px;
+  margin: 5px;
+  width: 293px;
+  border: solid 1px rgba(0, 0, 0, .16);
+
+  .gray {
+    padding: 0 15px;
+  }
+
+  app-title-underline {
+    font-size: 24px;
+    margin-left: 12px;
+    font-weight: 500;
+  }
+}
+
+.left {
+  width: 450px;
+  margin-right: 45px;
+  flex: 1;
+}
+
+.friend-image {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  bottom: -27px;
+  right: 10px;
+}
+
+.option {
+  display: flex;
+  margin: 0 162px;
+  margin-top: 54px;
+  width: calc(100vw - 408px);
+  justify-content: flex-end;
+}
+
+.gift {
+  &::before {
+    content: '';
+    display: block;
+    background: url('/assets/images/btn_bg.svg');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 124px;
+    height: 124px;
+    position: absolute;
+    right: -20%;
+    z-index: -1;
+    pointer-events: none;
+  }
+}
+
+app-button {
+  margin: 0 10px;
+}
+
+.fb {
+  width: 70px;
+
+  img {
+    width: 45px;
+  }
+}
+
+
+
+// moble
+@media (max-width: 575.98px) {
+  p {
+    font-size: 18px;
+  }
+
+  .title {
+    position: relative;
+  }
+
+  .content {
+    margin: 0 0 0 0;
+    width: 100%;
+  }
+
+  .head img {
+    width: 180px;
+    height: 180px;
+    margin-right: 0;
+  }
+
+  .describe {
+    flex-direction: column;
+  }
+
+  .column {
+    padding: 0 20px;
+    box-sizing: border-box;
+  }
+
+  .friend-image {
+    width: 80px;
+    height: 80px;
+    bottom: -35px;
+  }
+
+  .gray {
+    font-size: 14px;
+  }
+
+  .border {
+    margin-left: 0;
+    margin-right: 0;
+    width: 100%;
+
+    app-title-underline {
+      font-size: 18px;
+    }
+  }
+
+  .option {
+    margin: 0;
+    margin-top: 30px;
+    width: 93%;
+  }
+
+  .gift {
+    &::before {
+      width: 76px;
+      height: 76px;
+    }
+  }
+
+  .fb img {
+    width: 28px;
+  }
+
+  .gift img {
+    width: 88px;
+  }
+}

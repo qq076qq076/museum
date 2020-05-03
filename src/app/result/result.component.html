@@ -1,0 +1,55 @@
+<div class="title">
+  <img class="place"
+       src="/assets/images/Pingtung.svg">
+  <img class="title2"
+       src="/assets/images/home-title2.svg" />
+</div>
+<div class="content"
+     *ngIf="result">
+  <div class="head">
+    <img [src]="resultPath+result.image"/>
+  </div>
+  <div class="describe">
+    <div class="column left">
+      <h4 class="gray">你的角色類型是</h4>
+      <!-- <div> -->
+      <app-title-underline>
+        {{result.name}}
+      </app-title-underline>
+      <!-- </div> -->
+      <p>{{result.title}}</p>
+      <p class="gray">{{result.describe}}</p>
+    </div>
+    <div class="column">
+      <div class="border">
+        <p class="gray">專屬友伴
+          <img [src]="resultPath+friend.image"
+               class="friend-image">
+        </p>
+        <p>
+          <app-title-underline>
+            {{friend.name}}
+          </app-title-underline>
+        </p>
+      </div>
+      <div class="border">
+        <p class="gray">專屬場所</p>
+        <p>
+          <app-title-underline>
+            {{result.place}}
+          </app-title-underline>
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="option">
+  <app-button class="fb">
+    <img src="/assets/images/btn_fb.svg"
+         (click)="toFB()">
+  </app-button>
+  <app-button class="gift"
+              (click)="gift()">
+    <img src="/assets/images/btn-gift.png" />
+  </app-button>
+</div>

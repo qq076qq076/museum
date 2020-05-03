@@ -5,19 +5,36 @@
   <app-card *ngIf="step===1"
             [question]="firstQuestion"
             [showState]="getShowState(1)"
+            [index]="1"
             (next)="next(firstQuestion,$event)"></app-card>
   <app-card *ngIf="step<=2"
             [question]="secondQuestion"
             [showState]="getShowState(2)"
+            [index]="2"
             (next)="next(secondQuestion,$event)"></app-card>
   <ng-container *ngFor="let question of questionList;let i = index;">
     <app-card *ngIf="step>=i+1 && i+3>=step "
+              [index]="i+2"
               [question]="question"
               [showState]="getShowState(i+3)"
               (next)="next(question,$event)"></app-card>
   </ng-container>
 </ng-container>
+<app-result *ngIf="step === 16"
+            [secondQuestion]="secondQuestion"
+            @fadeInOutAnimation></app-result>
+<div class="point-area"
+     *ngIf="step!==0 && step !== 16">
+  <div *ngFor="let item of point;let i = index;"
+       [ngClass]="{current:step-1 === i}"
+       class="point"></div>
+</div>
 <div class="institution">
   <img src="/assets/images/institution.svg" />
-  <p class="copyright">本網站為屏東縣政府文化處版權所有 免責及隱私權宣告</p>
+  <p class="copyright">本網站為屏東縣政府文化處版權所有{{step-1}}
+    <a target="__blank"
+       href="https://www.cultural.pthg.gov.tw/pPrivateNotice.aspx">
+      免責及隱私權宣告
+    </a>
+  </p>
 </div>

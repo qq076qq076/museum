@@ -30,11 +30,11 @@ export const SecondQuestion: Question[] = [
     optionList: [
       {
         text: '手做商品',
-        value: '1',
+        value: 'b1',
       },
       {
         text: '健康蔬果或咖啡',
-        value: '2',
+        value: 'b2',
       },
     ],
   },
@@ -45,11 +45,11 @@ export const SecondQuestion: Question[] = [
     optionList: [
       {
         text: '幫陶壺裝飾打扮一番',
-        value: '1',
+        value: 'c1',
       },
       {
         text: '想知道陶壺的身家背景',
-        value: '2',
+        value: 'c2',
       },
     ],
   },
@@ -60,11 +60,11 @@ export const SecondQuestion: Question[] = [
     optionList: [
       {
         text: '第一次說故事就上手',
-        value: '1',
+        value: 'a1',
       },
       {
         text: '無塑生活大挑戰',
-        value: '2',
+        value: 'a2',
       },
     ],
   },

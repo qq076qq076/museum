@@ -5,6 +5,7 @@
 export const environment = {
   production: false,
   optionPath: '/assets/images/question/',
+  resultPath: '/assets/images/result/',
 };
 
 /*

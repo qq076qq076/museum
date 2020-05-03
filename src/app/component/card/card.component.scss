@@ -5,6 +5,20 @@
   left: 0;
   width: 100vw;
   height: 100vh;
+
+  &::before{
+    content:'';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: url('/assets/images/bg3_desktop.svg');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    z-index: -4;
+  }
 }
 
 .card {
@@ -54,6 +68,14 @@ app-button {
   margin: auto;
   margin-top: 55px;
   margin-bottom: 34px;
+  z-index: 20;
+}
+
+.page {
+  display: none;
+  font-size: 10px;
+  margin-left: 25px;
+  margin-bottom: 11px;
 }
 
 @media (max-width: 575.98px) {
@@ -61,17 +83,28 @@ app-button {
     margin-top: 42px;
     margin-left: 15px;
     margin-right: 15px;
+    padding-top: 17px;
     width: auto;
 
     app-title-underline {
       margin-left: 10px;
       margin-right: 10px;
+      margin-bottom: 30px;
     }
   }
 
 
   app-button {
     margin-top: 0;
+
+    img {
+      width: 88px;
+      height: 23px;
+    }
+  }
+
+  .page {
+    display: block;
   }
 }
 

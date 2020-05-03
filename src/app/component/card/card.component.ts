@@ -14,6 +14,7 @@ export class CardComponent implements OnInit {
   constructor() { }
   @Input() question: Question;
   @Input() showState: 'thirdWait' | 'secondWait' | 'show';
+  @Input() index: number;
   @Output() next = new EventEmitter<Option>();
 
   readonly optionPath = environment.optionPath;

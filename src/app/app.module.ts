@@ -9,6 +9,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { TitleUnderlineComponent } from './component/title-underline/title-underline.component';
 import { ImageSelectComponent } from './component/image-select/image-select.component';
 import { TextSelectComponent } from './component/text-select/text-select.component';
+import { ResultComponent } from './result/result.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { TextSelectComponent } from './component/text-select/text-select.compone
     CardComponent,
     TitleUnderlineComponent,
     ImageSelectComponent,
-    TextSelectComponent
+    TextSelectComponent,
+    ResultComponent
   ],
   imports: [
     BrowserModule,

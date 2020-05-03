@@ -27,6 +27,29 @@
     }
   }
 
+  .point-area {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+    position: absolute;
+    right: 12px;
+    top: 0;
+
+    .point {
+      background: #659605;
+      border-radius: 50%;
+      width: 10px;
+      height: 10px;
+      opacity: .25;
+      margin: 5px 0;
+
+      &.current {
+        opacity: 1;
+      }
+    }
+  }
+
   // moble
   @media (max-width: 575.98px) {
     .institution {
@@ -43,6 +66,9 @@
       }
     }
 
+    .point-area {
+      display: none;
+    }
   }
 
   // tablet

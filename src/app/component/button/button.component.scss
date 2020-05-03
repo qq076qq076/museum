@@ -11,7 +11,8 @@
   position: relative;
   border: solid 6px rgba(216, 227, 33, 0.33);
   background-clip: padding-box;
-  z-index: 20;
+  // z-index: 20;
+  // box-sizing: border-box;
 
   &[disabled=true] {
     opacity: 0.5;
@@ -23,7 +24,7 @@
 @media (max-width: 575.98px) {
   :host {
     width: 142px;
-    height: 42px;
+    min-height: 42px;
     border-radius: 12px;
 
     &::after {
@@ -32,11 +33,6 @@
       height: calc(100% + 7px);
       top: -3.5px;
       left: -3.5px;
-    }
-
-    img {
-      width: 88px;
-      height: 23px;
     }
   }
 }

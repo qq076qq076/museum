@@ -17,6 +17,7 @@ export class AppComponent implements OnInit {
   secondQuestion: Question;
   questionList: Question[] = QuestionList;
   readonly optionPath = environment.optionPath;
+  readonly point = Array(15);
 
   get qIndex(): number {
     return this.step - 1;
@@ -24,7 +25,6 @@ export class AppComponent implements OnInit {
 
   ngOnInit() {
     this.setRandomSort();
-    console.log(this.questionList)
   }
 
   start() {
