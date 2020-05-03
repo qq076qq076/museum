@@ -14,7 +14,7 @@
     display: block;
     bottom: 0;
     left: 0;
-    background: url('/assets/images/home-footer.png');
+    background: url('~/assets/images/home-footer.png');
     background-size: 100% auto;
     background-repeat: no-repeat;
     background-position: bottom;
@@ -124,7 +124,7 @@ app-title-underline {
   &::before {
     content: '';
     display: block;
-    background: url('/assets/images/btn_bg.svg');
+    background: url('~/assets/images/btn_bg.svg');
     background-size: 100%;
     background-repeat: no-repeat;
     width: 124px;

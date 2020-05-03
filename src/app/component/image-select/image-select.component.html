@@ -7,6 +7,6 @@
        height3:optionList.length ===3,
        height2:optionList.length ===2
       }"
-     [style.background-image]="'url('+optionPath+item.src+')'"
+     [style.background-image]="'url(~'+optionPath+item.src+')'"
      (click)="changeSelect.emit(item)">
 </div>

@@ -12,7 +12,7 @@ import { Question, Option } from './type/type';
 })
 export class AppComponent implements OnInit {
   constructor() { }
-  step = 1;
+  step = 0;
   firstQuestion = FirstQuestion;
   secondQuestion: Question;
   questionList: Question[] = QuestionList;
