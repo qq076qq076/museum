@@ -34,6 +34,14 @@ export class ResultComponent implements OnInit, OnChanges {
   }
 
   toFB() {
-
+    const facebookWindow = window.open(
+      'https://www.facebook.com/sharer/sharer.php?u=' + document.location.href,
+      'facebook-popup',
+      'height=350,width=600'
+    );
+    if (facebookWindow.focus) {
+      facebookWindow.focus();
+    }
+    return false;
   }
 }

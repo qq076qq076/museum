@@ -41,6 +41,14 @@
     // margin-right: 45px;
     width: auto;
     background-size: 100% auto;
+
+    &:first-child {
+      margin-top: 0;
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+    }
   }
 
   // .height4 {
