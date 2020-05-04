@@ -7,16 +7,14 @@
 <div class="content"
      *ngIf="result">
   <div class="head">
-    <img [src]="resultPath+result.image"/>
+    <img [src]="resultPath+result.image" />
   </div>
   <div class="describe">
     <div class="column left">
       <h4 class="gray">你的角色類型是</h4>
-      <!-- <div> -->
       <app-title-underline>
         {{result.name}}
       </app-title-underline>
-      <!-- </div> -->
       <p>{{result.title}}</p>
       <p class="gray">{{result.describe}}</p>
     </div>
@@ -45,11 +43,11 @@
 </div>
 <div class="option">
   <app-button class="fb">
-    <img src="/assets/images/btn_fb.svg"
+    <img src="./assets/images/btn_fb.svg"
          (click)="toFB()">
   </app-button>
   <app-button class="gift"
               (click)="gift()">
-    <img src="/assets/images/btn-gift.png" />
+    <img src="./assets/images/btn-gift.png" />
   </app-button>
 </div>

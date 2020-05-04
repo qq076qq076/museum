@@ -37,6 +37,7 @@
 
   .title2 {
     width: 392px;
+    max-width: 100%;
     display: inherit;
   }
 }
@@ -157,7 +158,26 @@ app-button {
   }
 
   .title {
-    position: relative;
+    position: static;
+    padding-top: 7px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+
+    .place {
+      // height: 36px;
+      // width: 24vw;
+      width: 86px;
+      display: inline-block;
+    }
+
+    .title2 {
+      // width: 230px;
+      width: 65vw;
+      width: 194px;
+      display: inline-block;
+    }
   }
 
   .content {
@@ -188,6 +208,10 @@ app-button {
 
   .gray {
     font-size: 14px;
+  }
+
+  app-title-underline {
+    font-size: 26px;
   }
 
   .border {

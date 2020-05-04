@@ -29,7 +29,7 @@ export const SecondQuestion: Question[] = [
     background: '02_bg_2.png',
     optionList: [
       {
-        text: '手做商品',
+        text: '手作商品',
         value: 'b1',
       },
       {
@@ -73,7 +73,7 @@ export const SecondQuestion: Question[] = [
 export const QuestionList: Question[] = [
   {
     type: 'image',
-    topic: '以下景點，您會想在哪裏進行拍照打卡？',
+    topic: '以下景點，您會想在哪裡進行拍照打卡？',
     background: '03_bg.png',
     optionList: [
       {
@@ -240,7 +240,7 @@ export const QuestionList: Question[] = [
   },
   {
     type: 'text',
-    topic: '你想在博物館裡為另外一半創造驚喜，你會選擇在哪個地點送出禮物呢？',
+    topic: '你想在博物館裡為另外一伴創造驚喜，你會選擇在哪個地點送出禮物呢？',
     background: '13_bg.png',
     font: 'small',
     optionList: [
@@ -274,11 +274,11 @@ export const QuestionList: Question[] = [
       },
       {
         value: '2',
-        text: '「蕉」給朋友吧！一起挖出屏東香蕉的前世今生',
+        text: '「蕉」個朋友吧！一起挖出屏東香蕉的前世今生',
       },
       {
         value: '3',
-        text: '眼淚雖鹹但成果很甜~ 蓮霧的逆境生存術',
+        text: '眼淚雖鹹但成果很甜~ 蓮霧的逆境生存術',
       },
       {
         value: '4',
