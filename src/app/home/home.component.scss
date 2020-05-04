@@ -6,10 +6,12 @@
   max-width: 100vw;
   margin: auto;
   padding-top: 178px;
+  box-sizing: border-box;
+  height: 100%;
 
   &::before {
     content: '';
-    width: 100%;
+    width: 100vw;
     height: 100%;
     position: absolute;
     display: block;
@@ -26,7 +28,7 @@
 
   &::after {
     content: '';
-    width: 100%;
+    width: 100vw;
     height: 100%;
     position: absolute;
     display: block;
@@ -85,8 +87,7 @@
 // moble
 @media (max-width: 575.98px) {
   :host {
-    width: calc(100vw - 10px);
-    padding-top: 130px;
+    padding: 130px 10px 0;
   }
 
   .place {
@@ -118,6 +119,10 @@
   .cast {
     width: 189px;
     margin-bottom: 98px;
+  }
+
+  app-title-underline img{
+    width: 100%;
   }
 }
 

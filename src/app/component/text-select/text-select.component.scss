@@ -73,6 +73,11 @@
   .option {
     width: 100% !important;
     margin: 10px 0;
+    font-size: 18px;
+
+    &.font-small {
+      font-size: 16px;
+    }
   }
 }
 
