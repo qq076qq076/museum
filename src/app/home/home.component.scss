@@ -51,7 +51,7 @@
 }
 
 .title2 {
-  margin-bottom: 54px;
+  margin-bottom: 49px;
   width: 400px;
 }
 
@@ -67,6 +67,7 @@
   app-button {
     position: absolute;
     right: 0;
+    top: 13px;
 
     &::before {
       content: '';
@@ -121,7 +122,7 @@
     margin-bottom: 98px;
   }
 
-  app-title-underline img{
+  app-title-underline img {
     width: 100%;
   }
 }
@@ -129,15 +130,37 @@
 // tablet
 @media (min-width: 576px) and (max-width: 769px) {
   :host {
-    width: calc(100vw - 156px);
+    width: calc(100vw - 178px);
+    padding-top: 196px;
+  }
+
+  .place {
+    margin-bottom: 7px;
   }
 
   .title2 {
-    margin-bottom: 44px;
+    margin-bottom: 40px;
   }
 
   .cast {
-    margin-bottom: 222px;
+    margin-bottom: 216px;
+  }
+
+  app-title-underline {
+    margin-bottom: 25px;
+  }
+
+  .start-area {
+    app-button {
+      top: 0;
+      right: 13px;
+
+      &::before {
+        width: 144px;
+        height: 144px;
+        right: -17%;
+      }
+    }
   }
 }
 
@@ -150,7 +173,7 @@
 
   .place {
     margin-bottom: 9px;
-    height: 36px;
+    height: 45px;
   }
 
   .title2 {
@@ -159,14 +182,24 @@
   }
 
   :host {
-    width: 1057px;
+    width: 1076px;
     padding-top: 264px;
   }
 
+  app-title-underline img {
+    width: 720px;
+  }
+
   .start-area {
-    width: 80%;
+    width: 100%;
 
     app-button {
+      top: 16px;
+      right: 18px;
+
+      img {
+        width: 184px;
+      }
 
       &::before {
         width: 180px;

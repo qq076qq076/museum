@@ -17,6 +17,7 @@
   border: solid 5px transparent;
   margin: 15px;
   z-index: 20;
+  background-clip: content-box;
 
   &.selected {
     border: solid 5px #d8e321;
@@ -29,16 +30,13 @@
 
 @media (max-width: 575.98px) {
   :host {
-    // flex-direction: column;
     display: block;
   }
 
   .option {
-    border-radius: 5px;
+    border-radius: 11px;
     height: 88px;
     margin: 15px 45px;
-    // margin-left: 45px;
-    // margin-right: 45px;
     width: auto;
     background-size: 100% auto;
     background-position: center;
@@ -51,16 +49,4 @@
       margin-bottom: 0;
     }
   }
-
-  // .height4 {
-  //   height: 25%;
-  // }
-
-  // .height3 {
-  //   height: calc(100% / 3);
-  // }
-
-  // .height2 {
-  //   height: 50%;
-  // }
 }

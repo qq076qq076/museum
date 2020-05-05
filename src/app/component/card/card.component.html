@@ -3,6 +3,7 @@
      [@cardBackgroundAnimation]="showState">
 </div>
 <div class="card"
+     [ngClass]="{current: showState === 'show'}"
      [@cardAnimation]="showState">
   <div *ngIf="showState==='show'"
        class="card-container"

@@ -38,7 +38,7 @@ export const result = {
     describe: '你擁有無可比擬的耐心與毅力，能堅定自己的理念，並且付諸行動！願與他人合作，共創更美好的生活。',
     friend: 'b1',
     place: '屏菸 1936 文化基地',
-    image: 'museum_graphic_cheer_leader.png',
+    image: 'museum_graphic_farmer.png',
   },
   c1: {
     name: '藝術家',
@@ -54,6 +54,6 @@ export const result = {
     describe: '你喜歡思考心思細膩，對於事物總具備敏銳的觀察力，而且總能發展出獨到的想法。',
     friend: 'c1',
     place: '屏東製造',
-    image: 'museum_graphic_cheer_leader.png',
+    image: 'museum_graphic_tourist.png',
   },
 };

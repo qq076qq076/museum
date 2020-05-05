@@ -36,6 +36,10 @@
     margin-bottom: 35px;
     max-width: 750px;
   }
+
+  &.current {
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2);
+  }
 }
 
 .card-container {
@@ -76,6 +80,7 @@ app-button {
   font-size: 10px;
   margin-left: 25px;
   margin-bottom: 11px;
+  z-index: 20;
 }
 
 @media (max-width: 575.98px) {

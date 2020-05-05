@@ -1,10 +1,10 @@
 :host {
   display: block;
   position: relative;
-  margin-bottom: 50px;
+  margin-bottom: 26px;
   text-align: center;
   font-size: 36px;
-  max-width: 612px;
+  // max-width: 612px;
   font-family: 'NotoSansCJKtc';
 
   img {
@@ -20,12 +20,12 @@
   &::before {
     content: '';
     position: absolute;
-    top: 0;
-    left: 0;
+    top: 14px;
+    left: -2.5%;
     display: block;
     height: 100%;
-    width: 100%;
-    background: url('~/assets/images/des_bg.svg');
+    width: 107%;
+    background: url('~/assets/images/des-bg.png');
     background-size: 100% 100%;
     z-index: 5;
   }
@@ -44,8 +44,21 @@
   }
 }
 
+// tablet
+@media (min-width: 576px) and (max-width: 769px) {
+  :host {
+    &::before {
+      height: 100%;
+    }
+  }
+}
+
 // large pc
 @media (min-width: 1919px) {
+  :host {
+    margin-bottom: 37px;
+  }
+
   img {
     width: 720px;
   }

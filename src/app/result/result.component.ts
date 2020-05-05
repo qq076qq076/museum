@@ -14,8 +14,8 @@ export class ResultComponent implements OnInit, OnChanges {
   @Input() secondQuestion: Question;
 
   readonly resultPath = environment.resultPath;
-  result: Result = result.a1;
-  friend: Result = result[this.result.friend];
+  result: Result;
+  friend: Result;
   ngOnInit(): void {
   }
 
