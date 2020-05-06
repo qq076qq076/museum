@@ -1,4 +1,4 @@
-import { Component, OnInit, Input, OnChanges } from '@angular/core';
+import { Component, OnInit, Input, OnChanges, Renderer2 } from '@angular/core';
 import { environment } from 'src/environments/environment';
 import { Result, result } from './result';
 import { Question } from '../type/type';
@@ -10,13 +10,16 @@ import { Question } from '../type/type';
 })
 export class ResultComponent implements OnInit, OnChanges {
 
-  constructor() { }
+  constructor(
+    private renderer2: Renderer2,
+  ) { }
   @Input() secondQuestion: Question;
 
   readonly resultPath = environment.resultPath;
-  result: Result;
-  friend: Result;
+  result: Result = result.a1;
+  friend: Result = result[result.a1.friend];
   ngOnInit(): void {
+    this.renderer2.addClass(document.body, 'result');
   }
 
   ngOnChanges() {

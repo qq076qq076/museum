@@ -56,10 +56,9 @@ p {
 }
 
 .content {
+  margin: auto;
   margin-top: 40px;
-  margin-left: 283px;
-  margin-right: 245px;
-  width: calc(100vw - 283px - 245px);
+  width: 773px;
 }
 
 .head {
@@ -81,6 +80,7 @@ p {
 .column {
   display: flex;
   flex-direction: column;
+  position: relative;
 }
 
 app-title-underline {
@@ -131,10 +131,9 @@ app-title-underline {
 
 .option {
   display: flex;
-  margin: 0 162px;
-  width: calc(100vw - 350px);
-  margin-top: -4px;
-  justify-content: flex-end;
+  position: absolute;
+  left: -14px;
+  bottom: -92px;
 }
 
 .gift {
@@ -236,6 +235,7 @@ app-button {
 
   app-title-underline {
     font-size: 26px;
+    font-weight: 500;
   }
 
   .border {
@@ -257,9 +257,10 @@ app-button {
   }
 
   .option {
-    margin: 0;
-    margin-top: 39px;
-    width: 91%;
+    right: 28px;
+    left: auto;
+    justify-content: flex-end;
+    width: 100%;
   }
 
   .gift {
@@ -283,6 +284,45 @@ app-button {
 
   app-button {
     margin: 0 3px;
+  }
+}
+
+// tablet
+@media (min-width: 576px) and (max-width: 769px) {
+  .content {
+    width: 697px;
+    margin: auto;
+    margin-top: 123px;
+  }
+
+  .head img {
+    margin: 0;
+  }
+
+  .describe {
+    top: 0;
+    margin-top: 52px;
+  }
+
+  .option {
+    margin: 0;
+    margin-top: 39px;
+    width: 91%;
+  }
+
+  .border {
+
+    width: 293px;
+    margin-right: 28px;
+  }
+
+  .left {
+    margin-right: 35px;
+  }
+
+  .gray{
+    margin: 0;
+    margin-top: 9px;
   }
 }
 

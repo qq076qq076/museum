@@ -14,7 +14,7 @@
     top: 0;
     left: 0;
     background-image: url('~/assets/images/bg3_desktop.svg');
-    background-size: 100%;
+    background-size: auto 100%;
     background-repeat: no-repeat;
     background-position: center bottom;
     z-index: -4;
@@ -35,6 +35,12 @@
     margin: auto;
     margin-bottom: 35px;
     max-width: 750px;
+
+    &::before {
+      background-repeat: no-repeat;
+      background-size: 612px 55px;
+      background-position: top center;
+    }
   }
 
   &.current {
@@ -57,7 +63,7 @@ app-text-select {
 .background-image {
   width: 100%;
   height: 100%;
-  background-size: 100% 100%;
+  background-size: auto 100%;
   background-repeat: no-repeat;
   background-position: top center;
   pointer-events: none;
@@ -99,6 +105,12 @@ app-button {
       margin-left: 10px;
       margin-right: 10px;
       margin-bottom: 30px;
+
+      &::before {
+        background-repeat: no-repeat;
+        background-size: 310px 27px;
+        background-position: top center;
+      }
     }
   }
 
@@ -120,4 +132,9 @@ app-button {
 // @media (max-width: 767.98px) {}
 
 // Small devices (landscape phones, 576px and up)
-@media (min-width: 576px) and (max-width: 767.98px) {}
+@media (min-width: 576px) and (max-width: 769px) {
+  .card {
+    width: calc(100vw - 60px);
+    height: 800px;
+  }
+}

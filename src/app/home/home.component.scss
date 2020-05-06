@@ -89,6 +89,13 @@
 @media (max-width: 575.98px) {
   :host {
     padding: 130px 10px 0;
+
+    &::before{
+      background-image: url('~/assets/images/home-header-mw.png');
+    }
+    &::after{
+      background-image: url('~/assets/images/home-footer-mw.png');
+    }
   }
 
   .place {

@@ -8,7 +8,8 @@
   height: 100%;
   background-image: url('~/assets/images/bg1.svg'),
     url('~/assets/images/bg2.svg');
-  background-size: 100% 100%;
+  // background-size: 100% 100%;
+  background-size: auto 100%;
   background-position: center center;
   background-repeat: no-repeat;
   overflow: hidden;
@@ -94,6 +95,10 @@
       img {
         width: 223px;
         top: 6px;
+      }
+
+      .copyright {
+        margin-left: 45px;
       }
     }
   }
