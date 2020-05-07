@@ -14,7 +14,7 @@
     display: block;
     bottom: 0;
     left: 0;
-    background: url('~/assets/images/home-footer.png');
+    background-image: url('~/assets/images/home-footer.png');
     background-size: 100% auto;
     background-repeat: no-repeat;
     background-position: bottom;
@@ -168,6 +168,10 @@ app-button {
 
 // moble
 @media (max-width: 575.98px) {
+  :host::after {
+    background-image: url('~/assets/images/home-footer-mw.png');
+  }
+
   p {
     font-size: 18px;
     margin-top: 3px;
@@ -320,7 +324,7 @@ app-button {
     margin-right: 35px;
   }
 
-  .gray{
+  .gray {
     margin: 0;
     margin-top: 9px;
   }
@@ -332,5 +336,9 @@ app-button {
     width: 847px;
     margin: auto;
     margin-top: 60px;
+  }
+
+  .option {
+    bottom: -130px;
   }
 }
