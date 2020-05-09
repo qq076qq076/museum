@@ -57,3 +57,26 @@ h5 {
 
 // Extra large devices (large desktops, 1200px and up)
 @media (min-width: 1200px) and(max-width:1919) {}
+
+
+@media screen and (orientation:landscape) and (max-width:569px) {
+
+  body {
+    min-height: 727px;
+
+    &.result {
+      min-height: 985px;
+    }
+  }
+}
+
+@media screen and (orientation:landscape) and (min-width:570px) and (max-width:767px) {
+
+  body {
+    min-height: 1029px;
+
+    &.result {
+      min-height: 985px;
+    }
+  }
+}

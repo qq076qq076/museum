@@ -84,6 +84,10 @@ export const QuestionList: Question[] = [
         value: '2',
         src: '03_02.JPG'
       },
+      {
+        value: '3',
+        src: '03_03.jpg'
+      },
     ],
   },
   {
@@ -98,6 +102,10 @@ export const QuestionList: Question[] = [
       {
         value: '2',
         src: '04_02.jpg'
+      },
+      {
+        value: '3',
+        src: '04_03.jpg'
       },
     ],
   },
@@ -298,6 +306,10 @@ export const QuestionList: Question[] = [
       {
         value: '2',
         src: '15_02.jpg',
+      },
+      {
+        value: '3',
+        src: '15_03.jpg',
       },
     ],
   },
