@@ -124,6 +124,11 @@ app-button {
     }
   }
 
+  app-image-select,
+  app-text-select {
+    flex: 1;
+  }
+
 
   app-button {
     margin-top: 0;
@@ -162,6 +167,10 @@ app-button {
 }
 
 @media (min-width: 1919px) {
+  :host::before {
+    background-size: 100% 100%;
+  }
+
   app-button {
     margin-top: auto;
   }

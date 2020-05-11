@@ -10,7 +10,7 @@
   align-items: center;
   flex-direction: column;
   flex-wrap: wrap;
-  height: 190px;
+  height: 165px;
   width: 615px;
   margin: auto;
   z-index: 20;
@@ -24,7 +24,8 @@
   color: #4a5141;
   font-size: 24px;
   font-family: 'NotoSansCJKtc';
-  height: 66px;
+  // height: 66px;
+  flex:1 0 calc(50% - 14px);
   z-index: 20;
   display: flex;
   display: -webkit-box;
@@ -87,6 +88,7 @@
     width: 100% !important;
     margin: 10px 0;
     font-size: 18px;
+    height: 66px;
 
     &.font-small {
       font-size: 16px;
