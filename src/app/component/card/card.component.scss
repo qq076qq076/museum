@@ -14,7 +14,7 @@
     top: 0;
     left: 0;
     background-image: url('~/assets/images/bg3_desktop.svg');
-    background-size: auto 100%;
+    // background-size: 100% 100%;
     background-repeat: no-repeat;
     background-position: center bottom;
     z-index: -4;
@@ -51,6 +51,12 @@
 
 .card-container {
   display: flex;
+  display: -webkit-box;
+  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
+  display: -ms-flexbox;
+  /* TWEENER - IE 10 */
+  display: -webkit-flex;
+  /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
   flex-direction: column;
   width: 100%;
   height: 100%;
@@ -58,13 +64,13 @@
 
 app-image-select,
 app-text-select {
-  flex: 1;
+  flex: 0 auto;
 }
 
 .background-image {
-  width: 100%;
-  height: 100%;
-  background-size: auto 100%;
+  min-width: 100%;
+  min-height: 100%;
+  background-size: 100% 100%;
   background-repeat: no-repeat;
   background-position: top center;
   pointer-events: none;
@@ -91,6 +97,7 @@ app-button {
 }
 
 @media (max-width: 575.98px) {
+
   :host::before {
     background-size: auto;
   }
@@ -130,6 +137,10 @@ app-button {
   .page {
     display: block;
   }
+
+  .background-image {
+    background-image: auto 100%;
+  }
 }
 
 // @media (max-width: 767.98px) {}
@@ -143,6 +154,10 @@ app-button {
 
   app-text-select {
     flex: 0;
+  }
+
+  .background-image {
+    background-image: auto 100%;
   }
 }
 

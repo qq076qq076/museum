@@ -1,5 +1,11 @@
 :host {
   display: flex;
+  display: -webkit-box;
+  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
+  display: -ms-flexbox;
+  /* TWEENER - IE 10 */
+  display: -webkit-flex;
+  /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
   flex-direction: column;
   align-items: flex-start;
   max-width: 100vw;
@@ -73,12 +79,24 @@ p {
 
 .describe {
   display: flex;
+  display: -webkit-box;
+  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
+  display: -ms-flexbox;
+  /* TWEENER - IE 10 */
+  display: -webkit-flex;
+  /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
   position: relative;
   top: -40px;
 }
 
 .column {
   display: flex;
+  display: -webkit-box;
+  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
+  display: -ms-flexbox;
+  /* TWEENER - IE 10 */
+  display: -webkit-flex;
+  /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
   flex-direction: column;
   position: relative;
 }
@@ -131,6 +149,12 @@ app-title-underline {
 
 .option {
   display: flex;
+  display: -webkit-box;
+  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
+  display: -ms-flexbox;
+  /* TWEENER - IE 10 */
+  display: -webkit-flex;
+  /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
   position: absolute;
   left: -14px;
   bottom: -92px;
@@ -182,6 +206,12 @@ app-button {
     position: static;
     padding-top: 17px;
     display: flex;
+    display: -webkit-box;
+    /* OLD - iOS 6-, Safari 3.1-6, BB7 */
+    display: -ms-flexbox;
+    /* TWEENER - IE 10 */
+    display: -webkit-flex;
+    /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
     align-items: center;
     justify-content: center;
     width: 100%;
