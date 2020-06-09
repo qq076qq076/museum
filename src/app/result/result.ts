@@ -4,6 +4,7 @@ export interface Result {
   describe: string;
   friend: string;
   place: string;
+  minPlace?: string;
   image: string;
 }
 
@@ -14,6 +15,7 @@ export const result = {
     describe: '你樂於學習與分享，每天期待接受新事物。熱心助人，而且總能對他人侃侃而談，與對方創造美好關係！',
     friend: 'a2',
     place: '屏菸風華',
+    minPlace: '菸葉常設展',
     image: 'museum_graphic_guide.png'
   },
   a2: {
@@ -22,6 +24,7 @@ export const result = {
     describe: '你樂觀又活潑，總能將歡樂帶給所愛的人，吃喝玩樂樣樣通。有你，無聊退散！',
     friend: 'a1',
     place: '身體力行',
+    minPlace: '大武山遊戲場',
     image: 'museum_graphic_cheer_leader.png',
   },
   b1: {
@@ -46,6 +49,7 @@ export const result = {
     describe: '你有著特別的氣質，總能為事物增添出新風采，喜歡接受挑戰與學習新事物，每天都充滿了行動力！',
     friend: 'c2',
     place: '南國美學',
+    minPlace: '藝術描繪靈魂',
     image: 'museum_graphic_artist.png',
   },
   c2: {
@@ -54,6 +58,7 @@ export const result = {
     describe: '你喜歡思考心思細膩，對於事物總具備敏銳的觀察力，而且總能發展出獨到的想法。',
     friend: 'c1',
     place: '屏東製造',
+    minPlace: '今昔產業創新',
     image: 'museum_graphic_tourist.png',
   },
 };

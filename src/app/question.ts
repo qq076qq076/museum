@@ -2,7 +2,7 @@ import { Question } from './type/type';
 
 export const FirstQuestion: Question = {
   type: 'image',
-  topic: '以下哪張圖片讓你看了心碰碰跳呢？',
+  topic: '當你進到屏菸1936文化基地時，映入眼簾的畫面中哪一張圖片最吸引你的目光呢？',
   background: '01_bg.png',
   optionList: [
     {
@@ -25,7 +25,7 @@ export const FirstQuestion: Question = {
 export const SecondQuestion: Question[] = [
   {
     type: 'text',
-    topic: '假想自已是名小老闆，你會選擇以下哪種商品進行販售呢？',
+    topic: '想像一下，如果你將在屏菸1936文化基地裡經營特色小舖，你會選擇哪種商品進行販售呢？',
     background: '02_bg_2.png',
     optionList: [
       {
@@ -40,7 +40,7 @@ export const SecondQuestion: Question[] = [
   },
   {
     type: 'text',
-    topic: '眼前有一個白色陶壺，你會想做的是？',
+    topic: '當你進到美術館參觀，眼前有一個白色陶壺展件，你會想做的是？',
     background: '02_bg_3.png',
     optionList: [
       {
@@ -55,7 +55,7 @@ export const SecondQuestion: Question[] = [
   },
   {
     type: 'text',
-    topic: '以下哪個活動名稱最吸引你？',
+    topic: '假如屏菸1936文化基地將要辦理一系列活動，哪一個活動主題你會覺得最有趣呢？',
     background: '02_bg_1.png',
     optionList: [
       {
@@ -73,7 +73,7 @@ export const SecondQuestion: Question[] = [
 export const QuestionList: Question[] = [
   {
     type: 'image',
-    topic: '以下景點，您會想在哪裡進行拍照打卡？',
+    topic: '屏菸1936文化基地裡面有許多特色場域，你最想在哪裡拍照打卡？',
     background: '03_bg.png',
     optionList: [
       {
@@ -92,7 +92,7 @@ export const QuestionList: Question[] = [
   },
   {
     type: 'image',
-    topic: '你會選擇哪一個地方作為約會的場域呢？',
+    topic: '邀心儀的朋友同遊屏菸1936文化基地，你會選擇哪個特色場域，作為向她(他)告白的地點呢？',
     background: '04_bg.png',
     optionList: [
       {
@@ -149,16 +149,24 @@ export const QuestionList: Question[] = [
   },
   {
     type: 'text',
-    topic: '前面聚集了一大群人，你覺得那邊可能有什麼事情在發生？',
+    topic: '屏東擁有豐富多元的文化，你會最想從哪個面向來認識屏東呢？',
     background: '07_bg.png',
     optionList: [
       {
         value: '1',
-        text: '親子正在兒童博物館外排隊進去遊玩',
+        text: '海洋文化',
       },
       {
         value: '2',
-        text: '民衆正在排隊買獨特的文創商品',
+        text: '食農文化',
+      },
+      {
+        value: '3',
+        text: '原民文化',
+      },
+      {
+        value: '4',
+        text: '在地藝術',
       },
     ],
   },
@@ -179,62 +187,62 @@ export const QuestionList: Question[] = [
   },
   {
     type: 'text',
-    topic: '如果有朋友邀請你一起參加「創意圖騰蜂蠟布」活動，你的選擇會是？',
+    topic: '如果有朋友邀請你一起參加「屏菸1936手作工坊」活動，哪個主題是最吸引您的呢？',
     background: '09_bg.png',
     optionList: [
       {
         value: '1',
-        text: '肯定立馬答應',
+        text: '手刻木雕作品',
       },
       {
         value: '2',
-        text: '不感興趣',
+        text: '食農廚藝教室',
       },
     ],
   },
   {
     type: 'text',
-    topic: '在逛美術館時，突然覺得有個東西在你背後，轉頭一看，你會看見什麼？',
+    topic: '在逛美術館時，通常什麼樣的展品會最吸引你的目光呢？',
     background: '10_bg.png',
     optionList: [
       {
         value: '1',
-        text: '跟你一樣高的雕刻作品',
+        text: '充滿原民風情的雕刻',
       },
       {
         value: '2',
-        text: '導覽志工跟在你背後',
+        text: '描繪屏東風貌的畫作',
       },
     ],
   },
   {
     type: 'text',
-    topic: '走進展間，發現裡面有著原住民所創作出的厲害木雕作品，此時你會發出的驚嘆語氣是？',
+    topic: '走進展間，發現裡面有著原住民所創作出的厲害木雕作品，你第一個會想做的事情是？',
     background: '11_bg.png',
     optionList: [
       {
         value: '1',
-        text: '哇~ Wow~',
+        text: '馬上跟作品合拍一張',
       },
       {
         value: '2',
-        text: '喔~ Oh~',
+        text: '走近觀察木雕的細節',
       },
     ],
   },
   {
     type: 'text',
-    topic: '一早起床，你的朋友傳了一封訊息給你，上面的內容會是？',
+    topic: '今天你參觀完屏菸1936文化基地，你最想分享怎樣的內容給朋友呢？',
     background: '12_bg.png',
     font: 'small',
     optionList: [
       {
         value: '1',
-        text: '誒~我已經幫你報名「創意食農。健康生活」記得來喔',
+        text: '我參加了「創意時農，健康生活」活動講座，收穫滿滿',
       },
       {
         value: '2',
-        text: '我昨天在美術館裡看到了好多屏東在地藝術家的作品！',
+        text: '我今天在美術館裡看到了好多屏東在地的藝術家作品！',
       },
       {
         value: '3',
@@ -296,7 +304,7 @@ export const QuestionList: Question[] = [
   },
   {
     type: 'image',
-    topic: '來玩一場躲貓貓，依你的直覺，會想躲在哪個空間裡？',
+    topic: '屏菸1936文化基地要辦躲貓貓遊戲，您覺得躲在哪個空間最有勝算呢？',
     background: '14_bg.png',
     optionList: [
       {

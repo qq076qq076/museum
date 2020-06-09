@@ -1,5 +1,7 @@
 :host {
-  display: block;
+  display: flex;
+  align-items: flex-end;
+  // display: block;
   position: relative;
   margin-bottom: 26px;
   text-align: center;

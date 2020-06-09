@@ -67,6 +67,14 @@ p {
   width: 773px;
 }
 
+.place {
+  display: flex;
+
+  .min {
+    font-size: 14px;
+  }
+}
+
 .head {
   text-align: center;
 

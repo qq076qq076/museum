@@ -30,9 +30,14 @@
       </div>
       <div class="border">
         <p class="gray">專屬場所</p>
-        <app-title-underline>
-          {{result.place}}
-        </app-title-underline>
+        <div class="place">
+          <app-title-underline>
+            {{result.place}}
+          </app-title-underline>
+          <app-title-underline *ngIf="result.minPlace">
+            <p class="min">{{result.minPlace}}</p>
+          </app-title-underline>
+        </div>
       </div>
       <div class="option">
         <app-button class="fb">
