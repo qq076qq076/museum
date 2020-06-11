@@ -40,6 +40,11 @@ export class AppComponent implements OnInit {
     this.step = this.step + 1;
   }
 
+  restart() {
+    this.step = 0;
+    this.setRandomSort();
+  }
+
   getShowState(index: number) {
     if (index === this.step) {
       return 'show';

@@ -1,4 +1,4 @@
-import { Component, OnInit, Input, OnChanges, Renderer2 } from '@angular/core';
+import { Component, OnInit, Input, OnChanges, Renderer2, Output, EventEmitter } from '@angular/core';
 import { environment } from 'src/environments/environment';
 import { Result, result } from './result';
 import { Question } from '../type/type';
@@ -14,6 +14,7 @@ export class ResultComponent implements OnInit, OnChanges {
     private renderer2: Renderer2,
   ) { }
   @Input() secondQuestion: Question;
+  @Output() restart = new EventEmitter();
 
   readonly resultPath = environment.resultPath;
   result: Result = result.a1;

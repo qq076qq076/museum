@@ -35,14 +35,18 @@
             {{result.place}}
           </app-title-underline>
           <app-title-underline *ngIf="result.minPlace">
-            <p class="min">{{result.minPlace}}</p>
+            <p class="location">{{result.minPlace}}</p>
           </app-title-underline>
         </div>
       </div>
       <div class="option">
-        <app-button class="fb">
-          <img src="./assets/images/btn_fb.svg"
-               (click)="toFB()">
+        <app-button class="fb"
+                    (click)="toFB()">
+          <img src="./assets/images/btn_fb.svg">
+        </app-button>
+        <app-button class="again"
+                    (click)="restart.emit()">
+          <img src="./assets/images/btn-again.png">
         </app-button>
         <app-button class="gift"
                     (click)="gift()">

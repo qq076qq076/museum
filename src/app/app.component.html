@@ -22,6 +22,7 @@
 </ng-container>
 <app-result *ngIf="step === 16"
             [secondQuestion]="secondQuestion"
+            (restart)="restart()"
             @fadeInOutAnimation></app-result>
 <div class="point-area"
      *ngIf="step!==0 && step !== 16">

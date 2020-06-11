@@ -70,8 +70,9 @@ p {
 .place {
   display: flex;
 
-  .min {
-    font-size: 14px;
+  .location {
+    color: #4a5141;
+    opacity: 0.75;
   }
 }
 
@@ -164,7 +165,7 @@ app-title-underline {
   display: -webkit-flex;
   /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
   position: absolute;
-  left: -14px;
+  left: -250px;
   bottom: -92px;
 }
 
@@ -299,18 +300,25 @@ app-button {
   }
 
   .option {
-    right: 28px;
-    left: auto;
-    justify-content: flex-end;
-    width: 100%;
+    position: relative;
+    top: 40px;
+    left: initial;
+    bottom: initial;
   }
 
-  .gift {
+  .gift,
+  .again {
+
+    img {
+      width: 88px;
+    }
+
     &::before {
       width: 76px;
       height: 76px;
     }
   }
+
 
   .fb {
     width: 42px;
@@ -318,10 +326,6 @@ app-button {
     img {
       width: 28px;
     }
-  }
-
-  .gift img {
-    width: 88px;
   }
 
   app-button {
@@ -347,9 +351,8 @@ app-button {
   }
 
   .option {
-    margin: 0;
-    margin-top: 39px;
-    width: 91%;
+    left: -315px;
+    bottom: -135px;
   }
 
   .border {
