@@ -34,7 +34,6 @@ export class AppComponent implements OnInit {
   next(question: Question, option: Option) {
     if (this.step === 1) {
       this.secondQuestion = SecondQuestion[this.firstQuestion.value.next];
-      console.log(this.secondQuestion)
     }
     question.value = option;
     this.step = this.step + 1;
@@ -42,6 +41,12 @@ export class AppComponent implements OnInit {
 
   restart() {
     this.step = 0;
+    this.firstQuestion.value = null;
+    this.secondQuestion.value = null;
+    this.questionList = this.questionList.map(question => ({
+      ...question,
+      value: null,
+    }));
     this.setRandomSort();
   }
 
