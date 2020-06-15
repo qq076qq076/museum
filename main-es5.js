@@ -2333,8 +2333,8 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
     var environment = {
       production: false,
-      optionPath: '/assets/images/question/',
-      resultPath: '/assets/images/result/'
+      optionPath: './assets/images/question/',
+      resultPath: './assets/images/result/'
     };
     /*
      * For easier debugging in development mode, you can import the following file
